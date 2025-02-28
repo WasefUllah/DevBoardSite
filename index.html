@@ -29,175 +29,263 @@
     </style>
   </head>
   <body class="poppins-regular bg-blue-100">
-      <section class="primary-container border-4 border-red-400 min-h-screen w-5/6 mx-auto ">
-        <!-- header  -->
-         <header>
-
-         
-        <nav class="border-2 border-yellow-400 h-16 flex justify-between items-center bg-white rounded-lg my-5">
-            <!-- logo and name -->
-            <div class="logo-container flex justify-between items-center gap-1 pl-2">
-                <img class="w-10" src="assets/logo.png" alt="">
-                <div class="text-2xl">Dev<span class="font-black">Board</span></div>
-            </div>
-            <!-- buttons -->
-             <div class="pr-2 flex justify-between items-center gap-2">
-                <button class="btn flex justify-between items-center gap-2 rounded-3xl bg-gray-100">
-                    <img class="w-6" src="assets/checkbox.png" alt="">
-                    <p id="done-work">23</p>
-                </button>
-                <button class="w-10 h-10 bg-gray-100 rounded-full">
-                    <img class="w-6 mx-auto" src="assets/theme-btn.png" alt="">
-                </button>
-             </div>
+    <section class="primary-container min-h-screen w-5/6 mx-auto py-5">
+      <!-- header  -->
+      <header>
+        <nav
+          class="h-16 flex justify-between items-center bg-white rounded-lg my-5"
+        >
+          <!-- logo and name -->
+          <div
+            class="logo-container flex justify-between items-center gap-1 pl-5"
+          >
+            <img class="w-10" src="assets/logo.png" alt="" />
+            <div class="text-2xl">Dev<span class="font-black">Board</span></div>
+          </div>
+          <!-- buttons -->
+          <div class="pr-2 flex justify-between items-center gap-2 pr-5">
+            <button
+              class="btn flex justify-between items-center gap-2 rounded-3xl bg-gray-100"
+            >
+              <img class="w-6" src="assets/checkbox.png" alt="" />
+              <p id="done-work">23</p>
+            </button>
+            <button class="w-10 h-10 bg-gray-100 rounded-full">
+              <img class="w-6 mx-auto" src="assets/theme-btn.png" alt="" />
+            </button>
+          </div>
         </nav>
-    </header>
-    <!-- main  -->
-    <main class="flex gap-2">
-
+      </header>
+      <!-- main  -->
+      <main class="flex gap-2">
         <!-- left section  -->
-        <section id="left-section-one" class=" bg-white border-4 border-blue-400 w-3/4 p-5">
-
-            <!-- top-right-section  -->
-            <div id="top-right-section" class=" flex justify-between items-center pb-4 gap-5">
-                <div class="w-1/4 bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2">
-                    <div class="w-10 h-10 bg-white rounded-full"><img class="w-4  m-auto mt-3" src="assets/checkbox.png" alt=""></div>
-                    <div class="">
-                        <p class="text-xs font-semibold">Task assigned</p>
-                        <p class="font-bold">05</p>
-                    </div>
-                </div>
-                <div id="blog" class="flex justify-center items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] py-2 pl-5 pr-16 rounded-xl gap-7 w-1/2">
-                    <img src="assets/board.png" alt="" class="w-16">
-                    <p class="text-white font-normal">Discover Something <br>New Today!</p>
-                </div>
-                <div id="date" class="w-1/4 bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2">
-
-                    <div class="w-10 h-10 bg-white rounded-full"><img class="w-4  m-auto mt-3" src="assets/calender.png" alt=""></div>
-                    <div class="">
-                        <p class="text-xs font-semibold">WED,</p>
-                        <p class="font-bold">JUL 28, 2025</p>
-                    </div>
-
-                </div>
+        <section id="left-section-one" class="bg-white w-3/4 p-5 rounded-lg">
+          <!-- top-right-section  -->
+          <div
+            id="top-right-section"
+            class="flex justify-between items-center pb-4 gap-5"
+          >
+            <div
+              class="w-1/4 bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2"
+            >
+              <div class="w-10 h-10 bg-white rounded-full">
+                <img class="w-4 m-auto mt-3" src="assets/checkbox.png" alt="" />
+              </div>
+              <div class="">
+                <p class="text-xs font-semibold">Task assigned</p>
+                <p class="font-bold">05</p>
+              </div>
             </div>
-        
-        <!-- horizontal line -->
-        <hr class="border-t-2 border-dashed text-gray-300">
-        
-            <!-- bottom-right-section  -->
-            <div id="bottom-right-section" class="grid grid-cols-3 grid-rows-2 gap-5">
-                <div id="card1" class="bg-gray-100">
-                    <div class="p-3">
-                        <p class="text-xs inline-block py-2 px-3 rounded-lg  bg-white">ShopEase</p>
-                        <p class="py-2 font-semibold">Fix Mobile Button Issue</p>
-                        <p class="bg-white inline-block py-1 px-4 rounded-lg text-xs overflow-hidden h-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
-                    </div>
-                    <!-- horizontal line  -->
-                    <hr class="border-t-2 border-dashed text-gray-300">
-                    <div class="flex justify-between items-center">
-                        <div class="p-3">
-                            <p class="text-xs">Deadline</p>
-                            <p class="text-sm">21 March 2025</p>
-                        </div>
-                        <button class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl">Completed</button>
-                    </div>
-                </div>
-                <div id="card2" class="bg-gray-100">
-                    <div class="p-3">
-                        <p class="text-xs inline-block py-2 px-3 rounded-lg  bg-white">CloudSync</p>
-                        <p class="py-2 font-semibold">Add Dark Mode</p>
-                        <p class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <!-- horizontal line  -->
-                    <hr class="border-t-2 border-dashed text-gray-300">
-                    <div class="flex justify-between items-center">
-                        <div class="p-3">
-                            <p class="text-xs">Deadline</p>
-                            <p class="text-sm">21 March 2025</p>
-                        </div>
-                        <button class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl">Completed</button>
-                    </div>
-                </div>
-                <div id="card3" class="bg-gray-100">
-                    <div class="p-3">
-                        <p class="text-xs inline-block py-2 px-3 rounded-lg  bg-white">SwiftPay</p>
-                        <p class="py-2 font-semibold">Optimize  Home page</p>
-                        <p class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
-                    </div>
-                    <!-- horizontal line  -->
-                    <hr class="border-t-2 border-dashed text-gray-300">
-                    <div class="flex justify-between items-center">
-                        <div class="p-3">
-                            <p class="text-xs">Deadline</p>
-                            <p class="text-sm">21 March 2025</p>
-                        </div>
-                        <button class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl">Completed</button>
-                    </div>
-                </div>
-                <div id="card4" class="bg-gray-100">
-                    <div class="p-3">
-                        <p class="text-xs inline-block py-2 px-3 rounded-lg  bg-white">Meta</p>
-                        <p class="py-2 font-semibold">Add new emoji 🤲</p>
-                        <p class="bg-white inline-block py-1 px-4 rounded-lg text-xs overflow-hidden h-10">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
-                    </div>
-                    <!-- horizontal line  -->
-                    <hr class="border-t-2 border-dashed text-gray-300">
-                    <div class="flex justify-between items-center">
-                        <div class="p-3">
-                            <p class="text-xs">Deadline</p>
-                            <p class="text-sm">21 March 2025</p>
-                        </div>
-                        <button class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl">Completed</button>
-                    </div>
-                </div>
-                <div id="card5" class="bg-gray-100">
-                    <div class="p-3">
-                        <p class="text-xs inline-block py-2 px-3 rounded-lg  bg-white">Google LLC</p>
-                        <p class="py-2 font-semibold">Integrate OpenAI API </p>
-                        <p class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
-                    </div>
-                    <!-- horizontal line  -->
-                    <hr class="border-t-2 border-dashed text-gray-300">
-                    <div class="flex justify-between items-center">
-                        <div class="p-3">
-                            <p class="text-xs">Deadline</p>
-                            <p class="text-sm">21 March 2025</p>
-                        </div>
-                        <button class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl">Completed</button>
-                    </div>
-                </div>
-                <div id="card6" class="bg-gray-100">
-                    <div class="p-3">
-                        <p class="text-xs inline-block py-2 px-3 rounded-lg  bg-white">Glassdoar</p>
-                        <p class="py-2 font-semibold">Improve Job searching</p>
-                        <p class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
-                    </div>
-                    <!-- horizontal line  -->
-                    <hr class="border-t-2 border-dashed text-gray-300">
-                    <div class="flex justify-between items-center">
-                        <div class="p-3">
-                            <p class="text-xs">Deadline</p>
-                            <p class="text-sm">21 March 2025</p>
-                        </div>
-                        <button class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl">Completed</button>
-                    </div>
-                </div>
+            <div
+              id="blog"
+              class="flex justify-center items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] py-2 pl-5 pr-16 rounded-xl gap-7 w-1/2"
+            >
+              <img src="assets/board.png" alt="" class="w-16" />
+              <p class="text-white font-normal">
+                Discover Something <br />New Today!
+              </p>
             </div>
+            <div
+              id="date"
+              class="w-1/4 bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2"
+            >
+              <div class="w-10 h-10 bg-white rounded-full">
+                <img class="w-4 m-auto mt-3" src="assets/calender.png" alt="" />
+              </div>
+              <div class="">
+                <p class="text-xs font-semibold">WED,</p>
+                <p class="font-bold">JUL 28, 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- horizontal line -->
+          <hr class="border-t-2 border-dashed text-gray-300" />
+
+          <!-- bottom-right-section  -->
+          <div
+            id="bottom-right-section"
+            class="grid grid-cols-3 grid-rows-2 gap-5 pt-5"
+          >
+            <div id="card1" class="bg-gray-100 rounded-2xl">
+              <div class="p-3">
+                <p class="text-xs inline-block py-2 px-3 rounded-lg bg-white">
+                  ShopEase
+                </p>
+                <p class="py-2 font-semibold">Fix Mobile Button Issue</p>
+                <p
+                  class="bg-white inline-block py-1 px-4 rounded-lg text-xs overflow-hidden h-10"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <!-- horizontal line  -->
+              <hr class="border-t-2 border-dashed text-gray-300" />
+              <div class="flex justify-between items-center">
+                <div class="p-3">
+                  <p class="text-xs">Deadline</p>
+                  <p class="text-sm">21 March 2025</p>
+                </div>
+                <button
+                  class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div id="card2" class="bg-gray-100 rounded-2xl">
+              <div class="p-3">
+                <p class="text-xs inline-block py-2 px-3 rounded-lg bg-white">
+                  CloudSync
+                </p>
+                <p class="py-2 font-semibold">Add Dark Mode</p>
+                <p
+                  class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden"
+                >
+                  Store the user's preference in localStorage, update CSS
+                  variables dynamically, and apply a smooth transition effect.
+                </p>
+              </div>
+              <!-- horizontal line  -->
+              <hr class="border-t-2 border-dashed text-gray-300" />
+              <div class="flex justify-between items-center">
+                <div class="p-3">
+                  <p class="text-xs">Deadline</p>
+                  <p class="text-sm">21 March 2025</p>
+                </div>
+                <button
+                  class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div id="card3" class="bg-gray-100 rounded-2xl">
+              <div class="p-3">
+                <p class="text-xs inline-block py-2 px-3 rounded-lg bg-white">
+                  SwiftPay
+                </p>
+                <p class="py-2 font-semibold">Optimize Home page</p>
+                <p
+                  class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <!-- horizontal line  -->
+              <hr class="border-t-2 border-dashed text-gray-300" />
+              <div class="flex justify-between items-center">
+                <div class="p-3">
+                  <p class="text-xs">Deadline</p>
+                  <p class="text-sm">21 March 2025</p>
+                </div>
+                <button
+                  class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div id="card4" class="bg-gray-100 rounded-2xl">
+              <div class="p-3">
+                <p class="text-xs inline-block py-2 px-3 rounded-lg bg-white">
+                  Meta
+                </p>
+                <p class="py-2 font-semibold">Add new emoji 🤲</p>
+                <p
+                  class="bg-white inline-block py-1 px-4 rounded-lg text-xs overflow-hidden h-10"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <!-- horizontal line  -->
+              <hr class="border-t-2 border-dashed text-gray-300" />
+              <div class="flex justify-between items-center">
+                <div class="p-3">
+                  <p class="text-xs">Deadline</p>
+                  <p class="text-sm">21 March 2025</p>
+                </div>
+                <button
+                  class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div id="card5" class="bg-gray-100 rounded-2xl">
+              <div class="p-3">
+                <p class="text-xs inline-block py-2 px-3 rounded-lg bg-white">
+                  Google LLC
+                </p>
+                <p class="py-2 font-semibold">Integrate OpenAI API</p>
+                <p
+                  class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden"
+                >
+                  Store the user's preference in localStorage, update CSS
+                  variables dynamically, and apply a smooth transition effect.
+                </p>
+              </div>
+              <!-- horizontal line  -->
+              <hr class="border-t-2 border-dashed text-gray-300" />
+              <div class="flex justify-between items-center">
+                <div class="p-3">
+                  <p class="text-xs">Deadline</p>
+                  <p class="text-sm">21 March 2025</p>
+                </div>
+                <button
+                  class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+            <div id="card6" class="bg-gray-100 rounded-2xl">
+              <div class="p-3">
+                <p class="text-xs inline-block py-2 px-3 rounded-lg bg-white">
+                  Glassdoar
+                </p>
+                <p class="py-2 font-semibold">Improve Job searching</p>
+                <p
+                  class="bg-white inline-block py-1 px-4 rounded-lg text-xs h-10 overflow-hidden"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <!-- horizontal line  -->
+              <hr class="border-t-2 border-dashed text-gray-300" />
+              <div class="flex justify-between items-center">
+                <div class="p-3">
+                  <p class="text-xs">Deadline</p>
+                  <p class="text-sm">21 March 2025</p>
+                </div>
+                <button
+                  class="btn text-white bg-[#3752FD] mx-auto block rounded-2xl"
+                >
+                  Completed
+                </button>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- right section  -->
-        <section id="right-section" class=" bg-white border-2 border-gray-600 w-1/4">
-            <div class="mx-auto gap-2 flex justify-center items-center pt-5">
-                <img src="assets/activity.png" alt="">
-                <p>Activity Log</p>
-            </div>
-            <button class="btn bg-[#3752FD] mx-auto block my-3 rounded-2xl text-white">Clear History</button>
-            <hr class="border-t-2 border-dashed text-gray-300">
+        <section id="right-section" class="bg-white w-1/4 rounded-lg">
+          <div class="mx-auto gap-2 flex justify-center items-center pt-5">
+            <img src="assets/activity.png" alt="" />
+            <p>Activity Log</p>
+          </div>
+          <button
+            class="btn bg-[#3752FD] mx-auto block my-3 rounded-2xl text-white"
+          >
+            Clear History
+          </button>
+          <hr class="border-t-2 border-dashed text-gray-300" />
         </section>
-     </main>
+      </main>
     </section>
-     
-
   </body>
 </html>
