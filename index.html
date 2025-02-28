@@ -1,18 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev Board</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- daisyui cdn  -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    
-</body>
+    <!-- poppins font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="poppins-regular bg-blue-100">
+      <section class="primary-container border-4 border-red-400 min-h-screen w-5/6 mx-auto ">
+        <!-- header  -->
+         <header>
+
+         
+        <nav class="border-2 border-yellow-400 h-16 flex justify-between items-center bg-white rounded-lg my-5">
+            <!-- logo and name -->
+            <div class="logo-container flex justify-between items-center gap-1 pl-2">
+                <img class="w-10" src="assets/logo.png" alt="">
+                <div class="text-2xl">Dev<span class="font-black">Board</span></div>
+            </div>
+            <!-- buttons -->
+             <div class="pr-2 flex justify-between items-center gap-2">
+                <button class="btn flex justify-between items-center gap-2 rounded-3xl bg-gray-100">
+                    <img class="w-6" src="assets/checkbox.png" alt="">
+                    <p id="done-work">23</p>
+                </button>
+                <button class="w-10 h-10 bg-gray-100 rounded-full">
+                    <img class="w-6 mx-auto" src="assets/theme-btn.png" alt="">
+                </button>
+             </div>
+        </nav>
+    </header>
+    <!-- main  -->
+    <main class="flex gap-2">
+        <section class="left-section bg-white border-4 border-blue-400 w-3/5 p-5">
+            <div class="top-right-section flex justify-between items-center pb-4">
+                <div class="bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2">
+                    <div class="w-10 h-10 bg-white rounded-full"><img class="w-4  m-auto mt-3" src="assets/checkbox.png" alt=""></div>
+                    <div class="">
+                        <p class="text-xs font-semibold">Task assigned</p>
+                        <p class="font-bold">05</p>
+                    </div>
+                </div>
+                <div id="blog" class="flex justify-between items-center bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] py-2 pl-5 pr-16 rounded-xl gap-3">
+                    <img src="assets/board.png" alt="" class="w-16">
+                    <p class="text-white font-normal">Discover Something <br>New Today!</p>
+                </div>
+                <div id="date" class="bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2">
+
+                    <div class="w-10 h-10 bg-white rounded-full"><img class="w-4  m-auto mt-3" src="assets/calender.png" alt=""></div>
+                    <div class="">
+                        <p class="text-xs font-semibold">WED,</p>
+                        <p class="font-bold">JUL 28, 2025</p>
+                    </div>
+
+                </div>
+            </div>
+            <hr class="border-t-2 border-dashed text-gray-300">
+            <div class="bottom-right-section"></div>
+        </section>
+        <section class="right-section bg-white border-2 border-gray-600 w-2/5">asdf</section>
+     </main>
+    </section>
+     
+
+  </body>
 </html>
