@@ -28,7 +28,7 @@
       }
     </style>
   </head>
-  <body class="poppins-regular bg-blue-100">
+  <body id="body" class="poppins-regular bg-blue-100">
     <section class="primary-container min-h-screen w-5/6 mx-auto py-5">
       <!-- header  -->
       <header>
@@ -50,7 +50,7 @@
               <img class="w-6" src="assets/checkbox.png" alt="" />
               <p id="done-work">23</p>
             </button>
-            <button class="w-10 h-10 bg-gray-100 rounded-full">
+            <button id="themeBtn" class="w-10 h-10 bg-gray-100 rounded-full">
               <img class="w-6 mx-auto" src="assets/theme-btn.png" alt="" />
             </button>
           </div>
@@ -66,7 +66,7 @@
             class="flex justify-between items-center pb-4 gap-5"
           >
             <div
-              class="w-1/4 bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2"
+              class="w-1/4 bg-gray-100 flex justify-center gap-2 items-center p-5 rounded-xl gap-2"
             >
               <div class="w-10 h-10 bg-white rounded-full">
                 <img class="w-4 m-auto mt-3" src="assets/checkbox.png" alt="" />
@@ -87,14 +87,14 @@
             </div>
             <div
               id="date"
-              class="w-1/4 bg-gray-100 flex justify-between items-center p-5 rounded-xl gap-2"
+              class="w-1/4 bg-gray-100 flex justify-center gap-2 items-center p-5 rounded-xl gap-2"
             >
               <div class="w-10 h-10 bg-white rounded-full">
                 <img class="w-4 m-auto mt-3" src="assets/calender.png" alt="" />
               </div>
               <div class="">
-                <p class="text-xs font-semibold">WED,</p>
-                <p class="font-bold">JUL 28, 2025</p>
+                <p id="weekday" class="text-xs font-semibold">WED,</p>
+                <p id="currentDate" class="font-bold">JUL 28, 2025</p>
               </div>
             </div>
           </div>
