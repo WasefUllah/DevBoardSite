@@ -11,10 +11,3 @@ function giveTheDate() {
   return currentTime12h;
 }
 
-function giveCurrentDate() {
-  return now.toLocaleDateString("en-US", {
-    month: "short", // "Feb"
-    day: "numeric", // "28"
-    year: "numeric", // "2025"
-  });
-}

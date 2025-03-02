@@ -55,86 +55,73 @@
 
       <h1 class="font-bold text-lg text-center">Blogs</h1>
       <main>
-        <section class="bg-blue-100 mt-3 rounded-lg">
-          <div id="question1" class="p-4 my-2 bg-white rounded-lg">
-            <p>
-              Question-1: What are the different ways to select an element in
-              the DOM?
-            </p>
-            <hr class="border-t-2 border-dashed text-gray-300 my-2" />
-            <p>
-              There are many ways to select any elements in DOM, such as <br />
-              getElementsByClassName: It helps to find multiple elements that
-              have the same class.<br />
-              getElementById: It helps to find a single element that has a
-              specific ID.<br />
-              getElementsByTagName: It helps to find multiple elements that have
-              the same tag name (e.g., div, p).<br />
-              querySelector: It helps to find the first element that matches a
-              specific CSS selector (ID, class, tag, etc.).<br />
-              querySelectorAll: It helps to find all elements that match a
-              specific CSS selector, returning a static NodeList.<br />
-            </p>
+        <section class="bg-blue-100 mt-3  rounded-lg">
+
+
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 my-1">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in
+              the DOM?</div>
+            <div class="collapse-content text-sm">There are many ways to select any elements in DOM, such as <br />
+              getElementsByClassName: It returns multiple elements that have the
+              same class.<br />
+              getElementById: It returns a single element that has a specific
+              ID.<br />
+              getElementsByTagName: It returns multiple elements that have the
+              same tag name. <br />
+              querySelector: It returns the first element that matches a
+              specific CSS selector.<br />
+              querySelectorAll: It returns all elements that match a specific
+              CSS selector as a static NodeList.<br /></div>
           </div>
-          <div id="question2" class="p-4 my-2 bg-white rounded-lg">
-            <p>
-              Question-2: What is the difference between innerHTML, innerText,
-              and textContent ?
-            </p>
-            <hr class="border-t-2 border-dashed text-gray-300 my-2" />
-            <p>
-              innerHTML gives you or sets the HTML content inside an element,
-              including tags. innerText gets or sets the visible text,
-              considering styles like visibility. textContent gives or sets all
-              the text, including hidden text, without considering styling or
-              formatting. textContent is faster than innerText because it
-              doesn't account for the layout.
-            </p>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 my-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText,
+              and textContent ?</div>
+            <div class="collapse-content text-sm">innerHTML contains the HTML content inside an element, including
+              tags. <br />
+              innerText contains the visible text, considering styles like
+              visibility. <br />
+              textContent contains all the text, including hidden text, without
+              considering styling or formatting.</div>
           </div>
-          <div id="question3" class="p-4 my-2 bg-white rounded-lg">
-            <p>Question-3: What is event delegation in the DOM?</p>
-            <hr class="border-t-2 border-dashed text-gray-300 my-2" />
-            <p>
-              Event delegation is when you attach a single event listener to a
-              parent element instead of individual child elements. The event
-              listener detects which child triggered the event through event
-              bubbling, improving performance, especially with many dynamic
-              elements.
-            </p>
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 my-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-sm">Event delegation is when attaching a single event listener to a
+              parent element instead of individual child elements and still it
+              detects which child triggered the event through event bubbling.</div>
           </div>
-          <div id="question4" class="p-4 my-2 bg-white rounded-lg">
-            <p>Question-4: What is event bubbling in the DOM?</p>
-            <hr class="border-t-2 border-dashed text-gray-300 my-2" />
-            <p>
-              Event bubbling is a mechanism in the DOM where an event starts
-              from the target element and then propagates upwards to its parent
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 my-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-sm">Event bubbling is a technique in the DOM where an event starts
+              from the target element and then goes through to its parent
               elements. This allows multiple parent elements to listen for the
-              same event, enabling event delegation and making the handling of
-              events more efficient.
-            </p>
+              same event that happened in their children. This helps in enabling
+              event delegation and making the handling of events more efficient.</div>
           </div>
-          <div id="question5" class="p-4 my-2 bg-white rounded-lg">
-            <p>
-              Question-5: How do you create, add, and remove elements using
-              JavaScript?
-            </p>
-            <hr class="border-t-2 border-dashed text-gray-300 my-2" />
-            <p>
-              To create, add, and remove elements using JavaScript, you can
-              start by creating an element with
-              `document.createElement('tagName')`, where 'tagName' is the type
-              of element you want to create, such as 'div', 'p', etc. After
-              that, to add the element to the document, you can use
-              `appendChild()` to append it to an existing parent element in the
-              DOM. For example, `parentElement.appendChild(newElement)` will add
-              the newly created element as the last child of the parent element.
-              If you want to remove an element, you can use `removeChild()` on
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 my-1">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using
+              JavaScript?</div>
+            <div class="collapse-content text-sm">To create, add, and remove elements using JavaScript, at first an
+              element has to be created by "document.createElement('tagName')",
+              where 'tagName' is the type of element, such as 'div', 'p', etc.
+              <br />
+              After that, to add the element to the document, "appendChild()" is
+              used to append it to an existing parent element in the DOM. For
+              example, "parentElement.appendChild(newElement)" will add the
+              newly created element as the last child of the parent element.
+              <br />
+              When it is time to remove an element, "removeChild()" is used on
               the parent element to remove the desired child. For instance,
-              `parentElement.removeChild(newElement)` will remove the created
-              element from its parent. These methods allow you to dynamically
-              manipulate the DOM, adding or removing elements as needed.
-            </p>
+              "parentElement.removeChild(newElement)" will remove the created
+              element from its parent. These methods allow to dynamically
+              manipulate the DOM, adding or removing elements as needed.</div>
           </div>
+
+
         </section>
       </main>
     </section>
